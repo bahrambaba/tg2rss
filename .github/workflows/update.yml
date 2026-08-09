@@ -4,15 +4,9 @@ on:
   schedule:
     - cron: '0 * * * *'  # Every hour
   workflow_dispatch:
-    inputs:
-      channel:
-        description: 'Telegram channel username (without @)'
-        required: true
-        default: 'koohnameh'
 
 permissions:
   contents: write
-  pages: write
 
 jobs:
   generate-rss:
@@ -31,9 +25,10 @@ jobs:
       - name: Generate RSS feeds
         run: python generate_feeds.py
       
-      - name: Upload RSS feeds
-        uses: actions/upload-artifact@v4
-        with:
-          name: rss-feeds
-          path: feeds/
-          retention-days: 7
+      - name: Commit and push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add feeds/
+          git commit -m "Update RSS feeds $(date -u +'%Y-%m-%d %H:%M')" || echo "No changes"
+          git push

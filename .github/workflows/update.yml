@@ -1,0 +1,39 @@
+name: Telegram to RSS Feed
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Every hour
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: 'Telegram channel username (without @)'
+        required: true
+        default: 'koohnameh'
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  generate-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: pip install requests
+      
+      - name: Generate RSS feeds
+        run: python generate_feeds.py
+      
+      - name: Upload RSS feeds
+        uses: actions/upload-artifact@v4
+        with:
+          name: rss-feeds
+          path: feeds/
+          retention-days: 7

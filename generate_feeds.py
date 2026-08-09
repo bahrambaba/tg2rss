@@ -19,12 +19,9 @@ import json
 CHANNELS = [
     "koohnameh",
     "bbcpersian",
-    "VOAbrfarsi",
-    "BBCAfghan",
-    "euronews_africa",
+    "VahidOnline",
+    "comentiz",
     "navad",
-    "tjpress",
-    "irdiplomacy",
 ]
 
 

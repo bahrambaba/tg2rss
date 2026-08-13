@@ -6,12 +6,12 @@
   },
   {
     "channel": "bbcpersian",
-    "messages": 15,
+    "messages": 11,
     "file": "feeds/rss/bbcpersian.xml"
   },
   {
     "channel": "VahidOnline",
-    "messages": 13,
+    "messages": 11,
     "file": "feeds/rss/VahidOnline.xml"
   },
   {

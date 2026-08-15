@@ -6,7 +6,7 @@
   },
   {
     "channel": "bbcpersian",
-    "messages": 9,
+    "messages": 5,
     "file": "feeds/rss/bbcpersian.xml"
   },
   {
@@ -16,12 +16,12 @@
   },
   {
     "channel": "comentiz",
-    "messages": 16,
+    "messages": 17,
     "file": "feeds/rss/comentiz.xml"
   },
   {
     "channel": "navad",
-    "messages": 15,
+    "messages": 8,
     "file": "feeds/rss/navad.xml"
   }
 ]

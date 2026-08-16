@@ -6,7 +6,7 @@
   },
   {
     "channel": "bbcpersian",
-    "messages": 17,
+    "messages": 18,
     "file": "feeds/rss/bbcpersian.xml"
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "channel": "navad",
-    "messages": 20,
+    "messages": 15,
     "file": "feeds/rss/navad.xml"
   }
 ]

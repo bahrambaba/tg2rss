@@ -16,12 +16,12 @@
   },
   {
     "channel": "comentiz",
-    "messages": 17,
+    "messages": 19,
     "file": "feeds/rss/comentiz.xml"
   },
   {
     "channel": "navad",
-    "messages": 15,
+    "messages": 19,
     "file": "feeds/rss/navad.xml"
   }
 ]

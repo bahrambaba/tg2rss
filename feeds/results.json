@@ -11,17 +11,17 @@
   },
   {
     "channel": "VahidOnline",
-    "messages": 11,
+    "messages": 12,
     "file": "feeds/rss/VahidOnline.xml"
   },
   {
     "channel": "comentiz",
-    "messages": 19,
+    "messages": 18,
     "file": "feeds/rss/comentiz.xml"
   },
   {
     "channel": "navad",
-    "messages": 16,
+    "messages": 17,
     "file": "feeds/rss/navad.xml"
   }
 ]

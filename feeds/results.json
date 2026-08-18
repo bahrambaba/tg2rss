@@ -11,7 +11,7 @@
   },
   {
     "channel": "VahidOnline",
-    "messages": 14,
+    "messages": 16,
     "file": "feeds/rss/VahidOnline.xml"
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "channel": "navad",
-    "messages": 13,
+    "messages": 19,
     "file": "feeds/rss/navad.xml"
   }
 ]

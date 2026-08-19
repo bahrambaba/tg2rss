@@ -1,8 +1,9 @@
 name: Telegram to RSS Feed
 
 on:
-  schedule:
-    - cron: '0 * * * *'  # Every hour
+schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+
   workflow_dispatch:
 
 permissions:
